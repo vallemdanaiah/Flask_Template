@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .danaiah{
+        border: 0cm;
+        border-radius: 2cm;
+        border-width: 3cm;
+        background-color: blueviolet;  
+    }
+</style>
+<center>
+    <h1>WELCOME TO THE LOGIN</h1>    
+    <!-- <form  class="danaiah" action="/register" method="post"> -->
+        <form class="danaiah" action="/userhomepage">
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br> 
+        <input type="submit" value="login">
+    </form></center>
+    
+{% endblock %}
+

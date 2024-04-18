@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- registered_users.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+</head>
+<body>
+    <h1>Registered Users</h1>
+    <ul>
+        <table border="3">
+        <tr>
+            <th>username</th>
+            <th>useremail</th>
+            <th>Password</th>
+            <th>mobile</th>
+            <th>address</th>
+            <th>state</th>
+            <th>qualification</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td> 
+            <td>{{ user.Password }}</td> 
+            <td>{{ user.mobile }}</td> 
+            <td>{{ user.address }}</td> 
+            <td>{{ user.state }}</td> 
+            <td>{{ user.qualification }}</td> 
+
+        </tr>      
+        {% endfor %}
+
+        </table>
+        
+    </ul>
+    <a href="/register">Register another user</a>
+</body>
+</html>
+
+{% endblock %}
+
+
+

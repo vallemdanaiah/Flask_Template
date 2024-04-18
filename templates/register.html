@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .danaiah{
+        border: 0cm;
+        border-radius: 2cm;
+        border-width: 3cm;
+        background-color: blueviolet;      
+
+    }
+</style>
+<center>
+<h1>WELCOME TO THE REGISTERPAGE</h1>
+
+<!-- <form  class="danaiah" action="/register" method="post"> -->
+    <form class="danaiah" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br>
+    
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" required></textarea><br>
+    
+    <label for="state">State:</label><br>
+    <input type="text" id="state" name="state" required><br>
+    
+    <label for="qualification">Qualification:</label><br>
+    <input type="text" id="qualification" name="qualification" required><br>
+    
+    <input type="submit" value="Register">
+</form></center>
+
+{% endblock %}
+
